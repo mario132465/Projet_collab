@@ -19,7 +19,67 @@ h1{
 }
 
 /* Partie Mario début*/
-
+.Mario {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 850px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .Mario img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .Mario img:hover {
+    transform: scale(1.05);
+  }
+  
+  .NomPrenom {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 700px) {
+    .Mario {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .Mario img {
+      margin-bottom: 15px;
+    }
+  }
+  
 
 
 
